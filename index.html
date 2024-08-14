@@ -22,11 +22,11 @@
                     <li class="relative flex justify-center items-center"><a href="">Home</a>
                         <div class="w-2 h-2 -left-3  bg-white absolute rounded-full "></div>
                     </li>
-                    <li><a href="">Why Using Us</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">How It Works</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">FAQ</a></li>
+                    <li><a href="#WhyUsingUs">Why Using Us</a></li>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#HowItWorks">How It Works</a></li>
+                    <li><a href="#Testimonial">Testimonial</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
                     <button
                         class="border-[1.5px] border-white px-8 py-2 hover:bg-white hover:text-black transition-all  hover:shadow-xl">Let's
                         talk</button>
@@ -34,7 +34,7 @@
             </div>
             <i class="fa-solid fa-bars cursor-pointer text-2xl block lg:hidden" id="openNav"></i>
         </div>
-        <div id="widthNav" class="block lg:hidden transition-all w-0 overflow-hidden h-screen fixed top-0 right-0 ">
+        <div id="widthNav" class="z-20 block lg:hidden transition-all w-0 overflow-hidden h-screen fixed top-0 right-0 ">
             <ul class="flex p-5  justify-between h-full  gap-8 flex-col">
                 <div class="flex justify-center  gap-8 flex-col">
                     <div class="flex justify-end">
@@ -63,7 +63,7 @@
             class="absolute bg-gradient-to-r from-[#FCAA4A] to-[#F8522E] w-[43rem] h-[22rem] -bottom-10 -right-10 blur-3xl rounded-full">
         </div> -->
 
-        <div class="absolute w-full h-full -bottom-[50%] ">
+        <div class="absolute w-full h-full -bottom-[70%] sm:-bottom-[50%] ">
             <svg  viewBox="0 0 1440 1619" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <desc>
                         Created with Pixso.
@@ -95,13 +95,13 @@
         
 
 
-        <div class="flex mt-10 justify-between items-center h-screen gap-10 overflow-hidden">
+        <div class="flex lg:mt-10 justify-between items-center sm:min-h-screen min-h-[80vh] gap-10 overflow-hidden">
             <!-- left -->
-            <div class="max-w-xl pl-10">
-                <h1 class="text-5xl z-10 leading-[3.8rem] font-light ">Empowering your Document Digitalization with
+            <div class="max-w-xl sm:pl-10 px-2">
+                <h1 class="sm:text-5xl text-4xl z-10 sm:leading-[3.8rem] font-light ">Empowering your Document Digitalization with
                     Paperize.AI
                 </h1>
-                <p class="my-4 z-10">We specialize in managing bulk scanning, seamlessly integrating your documents into
+                <p class="sm:my-4 my-6 z-10">We specialize in managing bulk scanning, seamlessly integrating your documents into
                     your
                     database with ease. Our AI-powered system simplifies the process, ensuring efficient data handling
                     and
@@ -112,7 +112,7 @@
             </div>
             <!-- right -->
 
-            <div class="relative w-[600px] h-[600px] -mr-32">
+            <div class=" hidden lg:block relative w-[600px] h-[600px] -mr-32">
                 <div class="absolute inset-0 border border-transparent rounded-full">
                     <!-- The Circle Border -->
                     <!-- <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -326,11 +326,12 @@
             </div>
         </div>
 
-        <div class="">
-            <div class="flex max-w-[50rem] h-52 m-2 mx-auto justify-between items-center flex-wrap gap-8">
-                <img class="h-8 z-10" src="./Docs/Assets/chup.png" alt="img">
-                <img class="h-8 z-10" src="./Docs/Assets/google.png" alt="img">
-                <img class="h-8 z-10" src="./Docs/Assets/microsoft.png" alt="img">
+        <div class="sm:h-52 h-36">
+            <p class="text-center mx-auto mb-6">Powered by</p>
+            <div class="flex max-w-[50rem]  m-2 mx-auto justify-between items-center px-3 sm:gap-8 gap-3">
+                <img class="sm:h-8 h-5 z-10" src="./Docs/Assets/chup.png" alt="img">
+                <img class="sm:h-8 h-5 z-10" src="./Docs/Assets/google.png" alt="img">
+                <img class="sm:h-8 h-5 z-10" src="./Docs/Assets/microsoft.png" alt="img">
             </div>
         </div>
 
@@ -340,41 +341,41 @@
     <!-- Paperize.ai? -->
 
 
-    <div class="relative overflow-hidden">
+    <div id="WhyUsingUs" class="relative overflow-hidden">
         <img src="./Docs/Assets/leftCircle.png" class="absolute -left-64 top-10  h-[90vh] " alt="">
         <img src="./Docs/Assets/rightCircle.png" class="absolute -right-64 bottom-10  h-[90vh] " alt="">
-        <div class="max-w-[75rem] w-full mt-8 mx-auto p-2 relative">
+        <div class="max-w-[75rem] w-full mt-12 sm:mt-8 mx-auto p-2 relative">
             <h2 class="text-center text-3xl sm:text-4xl font-light">Why using Paperize.ai?</h2>
-            <div class="mt-20 max-w-[50rem] gap-8 gap-y-16 flex justify-center items-center flex-wrap w-full mx-auto">
+            <div class="sm:mt-20 mt-10 max-w-[70rem] gap-8 sm:gap-y-16 flex justify-center items-center flex-wrap w-full mx-auto px-2">
                 <div class="max-w-[24rem] w-full flex text-center justify-center items-center flex-col gap-4">
                     <img src="./Docs/Assets/ai1.png" class="h-20" alt="ai">
-                    <h3 class="font-normal text-2xl">Reduced manual effort and errors</h3>
+                    <h3 class="font-normal sm:text-2xl text-xl ">Reduced manual effort and errors</h3>
                     <p class="text-[#FFFFFFCC]">Minimize manual tasks and errors with AI that streamlines data entry and
                         document handling.</p>
                 </div>
                 <div class="max-w-[24rem] w-full flex text-center justify-center items-center flex-col gap-4">
                     <img src="./Docs/Assets/ai2.png" class="h-20" alt="ai">
-                    <h3 class="font-normal text-2xl">Secure, reliable cloud data storage</h3>
+                    <h3 class="font-normal sm:text-2xl text-xl ">Secure, reliable cloud data storage</h3>
                     <p class="text-[#FFFFFFCC] text-sm">Access and store your data securely, with reliable retrieval
                         anytime.</p>
                 </div>
                 <div class="max-w-[24rem] w-full flex text-center justify-center items-center flex-col gap-4">
                     <img src="./Docs/Assets/ai3.png" class="h-20" alt="ai">
-                    <h3 class="font-normal text-2xl">Automated document sorting and categorization</h3>
+                    <h3 class="font-normal sm:text-2xl text-xl ">Automated document sorting and categorization</h3>
                     <p class="text-[#FFFFFFCC] text-sm">Automatically sort and categorize documents to save time and
                         reduce
                         clutter.</p>
                 </div>
                 <div class="max-w-[24rem] w-full flex text-center justify-center items-center flex-col gap-4">
                     <img src="./Docs/Assets/ai4.png" class="h-20" alt="ai">
-                    <h3 class="font-normal text-2xl">Improved scanning and extraction accuracy</h3>
+                    <h3 class="font-normal sm:text-2xl text-xl ">Improved scanning and extraction accuracy</h3>
                     <p class="text-[#FFFFFFCC] text-sm">Achieve high accuracy in document scanning and data extraction
                         to
                         streamline your workflow.</p>
                 </div>
                 <div class="max-w-[24rem] w-full flex text-center justify-center items-center flex-col gap-4">
                     <img src="./Docs/Assets/ai5.png" class="h-20" alt="ai">
-                    <h3 class="font-normal text-2xl">Seamless integration with existing database</h3>
+                    <h3 class="font-normal sm:text-2xl text-xl ">Seamless integration with existing database</h3>
                     <p class="text-[#FFFFFFCC] text-sm">Effortlessly connect with your existing databases for improved
                         data
                         flow and system efficiency.</p>
@@ -385,16 +386,16 @@
 
     <!-- Features -->
 
-    <div class="max-w-[70rem] w-full mt-20 mx-auto p-2">
-        <div class="flex justify-between my-16 items-center">
+    <div id="Features" class="max-w-[70rem] w-full mt-20 mx-auto p-2">
+        <div class="flex justify-between sm:my-16 my-10 sm:px-0 px-3 sm:items-center md:flex-row flex-col gap-4">
             <h2 class="font-light sm:text-5xl text-3xl">Features</h2>
             <p class="max-w-[39rem] text-[#FFFFFFCC] w-full">Discover how our AI-powered digitization service can
                 transform your document management. From precise text recognition to seamless data integration, our
                 features are designed to enhance your workflow and boost efficiency.</p>
         </div>
-        <div class="mt-20 max-w-[75rem] flex justify-center items-center flex-wrap w-full mx-auto ">
+        <div class="sm:mt-20 mt-10 max-w-[75rem] flex justify-center items-center flex-wrap w-full mx-auto ">
             <div
-                class="max-w-[23rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 p-8 border-r-2 border-b-2 h-[20rem] bg-[#1b1b1b] border-[#3c3c3c]">
+                class="md:max-w-[23rem] max-w-[18rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 md:p-8 p-4 sm:border-r-2 border-b-2 md:h-[20rem] h-[15rem] bg-[#1b1b1b] border-[#3c3c3c]">
                 <svg width="51.337891" height="51.846191" viewBox="0 0 51.3379 51.8462" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -431,7 +432,7 @@
                 <p class="text-xl font-light">Advanced Optical Character Recognition (OCR)</p>
             </div>
             <div
-                class="max-w-[23rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 p-8 border-r-2 border-b-2 h-[20rem] bg-[#1b1b1b] border-[#3c3c3c]">
+                class="md:max-w-[23rem] max-w-[18rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 md:p-8 p-4 sm:border-r-2 border-b-2 md:h-[20rem] h-[15rem] bg-[#1b1b1b] border-[#3c3c3c]">
                 <svg width="58.000000" height="58.000000" viewBox="0 0 58 58" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -492,7 +493,8 @@
                 <p class="text-2xl font-light">Intelligent Data Extraction</p>
             </div>
             <div
-                class="max-w-[23rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 p-8 border-b-2 h-[20rem] bg-[#1b1b1b] border-[#3c3c3c]">
+                class="md:max-w-[23rem] max-w-[18rem] md:p-8 p-4 md:h-[20rem] h-[15rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 border-b-2  bg-[#1b1b1b] sm:border-[#3c3c3c] 
+                ">
                 <svg width="57.083496" height="57.083252" viewBox="0 0 57.0835 57.0833" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -538,7 +540,7 @@
                 <p class="text-2xl font-light">Real-Time Document Processing</p>
             </div>
             <div
-                class="max-w-[23rem] transition-all w-full flex flex-col justify-center gap-8 p-8 border-r-2  h-[20rem] featuresgredient border-[#3c3c3c]">
+                class="md:max-w-[23rem] max-w-[18rem] md:p-8 p-4 md:h-[20rem] h-[15rem] transition-all w-full flex flex-col justify-center gap-8 sm:border-r-2 featuresgredient border-[#3c3c3c]">
                 <svg width="57.566895" height="57.566406" viewBox="0 0 57.5669 57.5664" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -571,7 +573,7 @@
                 </div>
             </div>
             <div
-                class="max-w-[23rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 p-8 border-r-2  h-[20rem] bg-[#1b1b1b] border-[#3c3c3c]">
+                class="md:max-w-[23rem] max-w-[18rem] md:p-8 p-4 md:h-[20rem] h-[15rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 sm:border-r-2 border-t-2 sm:border-t-0 bg-[#1b1b1b] border-[#3c3c3c]">
                 <svg width="58.000000" height="58.000000" viewBox="0 0 58 58" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -610,7 +612,7 @@
                 <p class="text-2xl font-light">Seamless Integration with Existing Systems</p>
             </div>
             <div
-                class="max-w-[23rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 p-8 h-[20rem] bg-[#1b1b1b] border-[#3c3c3c]">
+                class="md:max-w-[23rem] max-w-[18rem] md:p-8 p-4 md:h-[20rem] h-[15rem] hover:bg-zinc-800 transition-all w-full flex flex-col justify-center gap-8 border-t-2 sm:border-t-0 bg-[#1b1b1b] border-[#3c3c3c]">
                 <svg width="57.083496" height="57.083008" viewBox="0 0 57.0835 57.083" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>
@@ -655,7 +657,7 @@
 
     <!-- How Paperize.AI Works -->
 
-    <div class="workBg relative overflow-hidden">
+    <div id="HowItWorks" class="workBg relative overflow-hidden">
         <div class="absolute w-full h-full inset-0">
             <svg width="1601.000000" height="1169.000000" viewBox="0 0 1601 1169" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <desc>
@@ -672,7 +674,7 @@
             
         </div>
         <div class="max-w-[70rem] w-full mt-20 mx-auto p-2 ">
-            <div class="flex justify-center my-16 text-center flex-col gap-7 items-center">
+            <div class="flex justify-center sm:my-16 my-0 text-center flex-col sm:gap-7 gap-4 items-center">
                 <h2 class="font-light sm:text-5xl text-3xl">How Paperize.AI Works</h2>
                 <p class="max-w-[50rem] text-[#FFFFFFCC] w-full">Experience the seamless transformation of your paper
                     documents into digital assets with our AI-powered service. Our efficient and accurate process
@@ -680,7 +682,7 @@
                     you get the best results every step of the way</p>
             </div>
 
-            <div class="mt-20 max-w-[75rem] flex gap-6 gap-y-20 justify-center items-center flex-wrap w-full mx-auto">
+            <div class="sm:mt-20 mt-10 max-w-[75rem] flex gap-6 sm:gap-y-20 gap-y-10 justify-center items-center flex-wrap w-full mx-auto">
                 <div
                     class="max-w-[20rem] hover:scale-105 transition-all duration-500 w-full flex justify-center items-center flex-col gap-2 text-center">
                     <img src="./Docs/Assets/work1.png" alt="ai">
@@ -731,7 +733,7 @@
 
     <!-- What Our Client Said -->
 
-    <div class="max-w-[70rem] w-full mt-20 mx-auto p-2">
+    <div id="Testimonial" class="max-w-[70rem] w-full mt-20 mx-auto p-2">
         <div class="flex justify-between items-center">
             <h2 class="font-light sm:text-3xl text-xl">What Our Client Said</h2>
             <div class="flex justify-center items-center gap-4">
@@ -826,7 +828,7 @@
 
     <!-- ----faqs====== -->
 
-    <div class="bg-black text-white mt-10 flex items-center justify-center ">
+    <div id="FAQ" class="bg-black text-white mt-10 flex items-center justify-center ">
         <div class="w-full max-w-5xl p-6">
             <h1 class="text-[#F9E166] text-center  mb-4 tracking-wider">F.A.Q</h1>
             <h2 class="sm:text-4xl text-2xl font-light text-center mb-4">Frequently Asked Questions</h2>
@@ -909,9 +911,9 @@
     <!-- start -->
 
     <div class="relative overflow-hidden max-w-[70rem] w-full mt-20 mx-auto p-2 mb-10">
-        <div class="flex justify-center relative rounded-3xl overflow-hidden p-10 pr-0 items-center gap-8">
+        <div class="flex justify-center relative rounded-3xl overflow-hidden sm:p-10 p-5 sm:pr-0 items-center gap-8">
             <div class="h-[20rem] w-[35rem] -bottom-12  -left-16 bg-[#7155f6] absolute rounded-full blur-3xl"></div>
-            <div class="h-[25rem] w-[39rem] -bottom-12  -right-16 bg-[#f5961b] absolute rounded-full 
+            <div class="h-[25rem] w-[39rem] -bottom-12 hidden lg:block  -right-16 bg-[#f5961b] absolute rounded-full 
             blur-3xl"></div>
             
             <div class="z-10">
@@ -921,10 +923,10 @@
                     via WhatsApp for quick and
                     direct support</p>
                 <button
-                    class="flex justify-center items-center gap-4 rounded-sm px-5 py-1 bg-black text-white hover:text-black border-2 border-black hover:bg-transparent transition-all">Let’s
+                    class="flex justify-center items-center gap-4 rounded-md px-5 py-1 bg-black text-white hover:text-black border-2 border-black hover:bg-transparent transition-all">Let’s
                     Talk via WhatsApp <i class="fa-brands fa-whatsapp text-3xl"></i></button>
             </div>
-            <img src="./Docs/Assets/startImg.png" alt="ai" class="z-10 max-h-[20rem]">
+            <img src="./Docs/Assets/startImg.png" alt="ai" class="hidden lg:block z-10 max-h-[20rem]">
         </div>
     </div>
 
@@ -952,33 +954,33 @@
                                     href="/">Home</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite font-inter text-[15px] font-normal hover:text-zinc-300 transition-all"
-                                    href="/our-tutors">News</a></li>
+                                    href="/our-tutors">Why Using Us</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite font-inter text-[15px] font-normal hover:text-zinc-300 transition-all"
-                                    href="/become-a-tutor">Contact</a></li>
+                                    href="/become-a-tutor">Features</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite font-inter text-[15px] font-normal hover:text-zinc-300 transition-all"
-                                    href="/plans-and-pricing">Plans and pricing</a></li>
+                                    href="/plans-and-pricing">How It Works</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite font-inter text-[15px] font-normal hover:text-zinc-300 transition-all"
-                                    href="/terms-and-conditions">Terms and conditions</a></li>
+                                    href="/terms-and-conditions">Testimonial</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite font-inter text-[15px] font-normal hover:text-zinc-300 transition-all"
-                                    href="/privacy-policy">Privcay policy</a></li>
+                                    href="/privacy-policy">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="mt-6 flex flex-col gap-4 sm:mt-0 z-10">
                         <div class="flex gap-4 sm:flex-col">
                             <div class="mt-[15px]"><a
                                     class="text-deutziawhite  hover:text-zinc-300 transition-all font-inter text-[15px] font-normal"
-                                    href="/privacy-policy">Privcay policy</a></div>
+                                    href="/privacy-policy">Contact Us</a></div>
                         </div>
                     </div>
                 </div>
             </div>
             <hr class="mt-[30px] text-white z-10" />
-            <div class="flex items-center justify-between pb-8 pt-[9px] md:py-8">
-                <p class=" font-normal text-[#F7F8FE] ">
+            <div class="flex flex-wrap gap-3 items-center sm:justify-between justify-center pb-8 pt-[9px] md:py-8">
+                <p class=" font-normal text-[#F7F8FE] z-10 ">
                     Copyright 2024 Paperize.AI
                 </p>
                 <ul class="flex justify-center items-center gap-4 text-[#F7F8FE] z-10">
