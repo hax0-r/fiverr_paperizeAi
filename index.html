@@ -28,6 +28,7 @@
     .fadeIn {
         animation: fadeIn 1.5s;
     }
+
     .fadeIn1 {
         animation: fadeIn1 1.5s;
     }
@@ -88,7 +89,7 @@
 
 
 <body>
-    <nav>
+    <nav class="z-50 bgggg">
         <div class="flex justify-between items-center h-20 max-w-[80rem] mx-auto px-5 ">
             <a href=""><img src="./Docs/Assets/logo.png" class="h-8" alt=""></a>
             <div class="hidden lg:block">
@@ -108,26 +109,27 @@
             </div>
             <i class="fa-solid fa-bars cursor-pointer text-2xl block lg:hidden" id="openNav"></i>
         </div>
-        <div id="widthNav"
-            class="z-20 block lg:hidden transition-all w-0 overflow-hidden h-screen fixed top-0 right-0 ">
-            <ul class="flex p-5  justify-between h-full  gap-8 flex-col">
-                <div class="flex justify-center  gap-8 flex-col">
-                    <div class="flex justify-end">
-                        <i class="fa-solid fa-xmark cursor-pointer text-2xl" id="closeNav"></i>
-                    </div>
-                    <li class="relative flex items-center"><a href="">Home</a>
-                        <div class="w-2 h-2 -left-3  bg-white absolute rounded-full "></div>
-                    </li>
-                    <li><a href="">Why Using Us</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">How It Works</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">FAQ</a></li>
-                </div>
-                <button class="border-[1.5px] border-white px-8 py-2">Let's talk</button>
-            </ul>
-        </div>
     </nav>
+
+
+    <div id="widthNav" class=" block  z-40 lg:hidden transition-all w-0 overflow-hidden h-screen fixed top-0 right-0 ">
+        <ul class="flex  p-5  justify-between h-full  gap-8 flex-col">
+            <div class="flex justify-center  gap-8 flex-col">
+                <div class="flex justify-end">
+                    <i class="fa-solid fa-xmark cursor-pointer text-2xl" id="closeNav"></i>
+                </div>
+                <li class="relative flex items-center"><a href="">Home</a>
+                    <div class="w-2 h-2 -left-3  bg-white absolute rounded-full "></div>
+                </li>
+                <li><a href="">Why Using Us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">How It Works</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">FAQ</a></li>
+            </div>
+            <button class="border-[1.5px] border-white px-8 py-2">Let's talk</button>
+        </ul>
+    </div>
 
 
     <div class="relative overflow-hidden">
