@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #1e1c1c;
+    --white-color: #f7f7f7;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+nav {
+    backdrop-filter: blur(1.25rem);
+    background: linear-gradient(180.00deg, rgba(0, 0, 0, 0.2) 18.566%, rgba(0, 0, 0, 0) 85.569%);
+}
+
+#widthNav {
+    backdrop-filter: blur(1.25rem);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.graduidentHero {
+    background: url(../Docs/Assets/GradientHero.png) center;
+    height: 40rem;
+    background-size: cover;
+}
+
+.featuresgredient {
+    background: radial-gradient(132.00% 141.42% at 0% 100%, rgb(28, 47, 99), rgb(105, 65, 198) 48.032%, rgb(247, 157, 0) 84.783%, rgb(164, 95, 43) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , rgb(255, 255, 255);
+    transition: 200ms all;
+}
+
+.sliderBg {
+    box-sizing: border-box;
+    border: 0.06rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    background: linear-gradient(90.00deg, rgb(23, 45, 99), rgb(35, 51, 98) 46.5%, rgb(104, 33, 130) 76%, rgb(119, 56, 40) 100%), rgb(242, 101, 34);
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100vw;
+}
+
+.slider-item {
+    flex: 0 0 100%; /* Ensure each item takes up the full width of the container */
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+
+.slider-indicators {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.indicator {
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: white;
+}
