@@ -89,7 +89,7 @@
 
 
 <body>
-    <nav class="z-50 bgggg">
+    <nav class="z-50 bgggg mb-5">
         <div class="flex justify-between items-center h-20 max-w-[80rem] mx-auto px-5 ">
             <a href=""><img src="./Docs/Assets/logo.png" class="h-8" alt=""></a>
             <div class="hidden lg:block">
@@ -121,11 +121,11 @@
                 <li class="relative flex items-center"><a href="">Home</a>
                     <div class="w-2 h-2 -left-3  bg-white absolute rounded-full "></div>
                 </li>
-                <li><a href="">Why Using Us</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">How It Works</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">FAQ</a></li>
+                <li><a id="closeNav1" href="#WhyUsingUs">Why Using Us</a></li>
+                <li><a id="closeNav2" href="#Features">Features</a></li>
+                <li><a id="closeNav3" href="#HowItWorks">How It Works</a></li>
+                <li><a id="closeNav4" href="#Testimonial">Testimonial</a></li>
+                <li><a id="closeNav5" href="#FAQ">FAQ</a></li>
             </div>
             <button class="border-[1.5px] border-white px-8 py-2">Let's talk</button>
         </ul>
@@ -133,13 +133,6 @@
 
 
     <div class="relative overflow-hidden">
-        <!-- <div
-            class="absolute bg-gradient-to-r from-[#6557FF] to-[#AA3FFF] w-[43rem] h-[22rem] -bottom-10 -left-10 blur-3xl rounded-full">
-        </div>
-        <div
-            class="absolute bg-gradient-to-r from-[#FCAA4A] to-[#F8522E] w-[43rem] h-[22rem] -bottom-10 -right-10 blur-3xl rounded-full">
-        </div> -->
-
         <div class="absolute w-full h-full -bottom-[70%] sm:-bottom-[50%] ">
             <svg viewBox="0 0 1440 1619" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -180,14 +173,14 @@
 
 
 
-        <div class="flex lg:mt-10 justify-between items-center sm:min-h-screen min-h-[80vh] gap-10 overflow-hidden">
+        <div class="flex  justify-between items-center sm:min-h-screen min-h-[80vh] gap-10 overflow-hidden">
             <!-- left -->
             <div class="max-w-xl sm:pl-10 px-2 fadeIn1 ">
-                <h1 class="sm:text-5xl text-4xl z-50 sm:leading-[3.8rem] font-light ">Empowering your Document
+                <h1 class="sm:text-7xl text-4xl z-50 font-light ">Empowering your Document
                     Digitalization with
                     Paperize.AI
                 </h1>
-                <p class="sm:my-4 my-6 z-50">We specialize in managing bulk scanning, seamlessly integrating your
+                <p class="sm:my-4 my-6 sm:py-3 z-50 text-lg">We specialize in managing bulk scanning, seamlessly integrating your
                     documents into
                     your
                     database with ease. Our AI-powered system simplifies the process, ensuring efficient data handling
@@ -433,11 +426,11 @@
 
     <!-- Paperize.ai? -->
 
-    <div id="WhyUsingUs" class="relative overflow-hidden ">
+    <div id="WhyUsingUs" class="relative overflow-hidden sm:pt-14 pt-5">
         <img src="./Docs/Assets/leftCircle.png" class="absolute -left-64 top-10  h-[90vh] " alt="">
         <img src="./Docs/Assets/rightCircle.png" class="absolute -right-64 bottom-10  h-[90vh] " alt="">
         <div class="max-w-[75rem] w-full mt-12 sm:mt-8 mx-auto p-2 relative">
-            <h2 class="text-center  text-3xl sm:text-4xl font-light">Why using Paperize.ai?</h2>
+            <h2 class="text-center  text-3xl sm:text-5xl font-light pb-5 sm:pb-0 ">Why using Paperize.ai?</h2>
             <div
                 class="sm:mt-20 mt-10 max-w-[70rem] sm:gap-8 gap-4 sm:gap-y-16 gap-y-8 flex justify-center items-center flex-wrap w-full mx-auto sm:px-2">
                 <div
@@ -865,8 +858,8 @@
                     <div class="w-14 indicator h-1 bg-zinc-500 rounded-lg"></div>
                     <div class="w-14 indicator h-1 bg-zinc-500 rounded-lg"></div>
                     <div class="w-14 indicator h-1 bg-zinc-500 rounded-lg"></div>
-                    <div class="w-14 indicator h-1 bg-zinc-500 rounded-lg"></div>
-                    <div class="w-14 indicator h-1 bg-zinc-500 rounded-lg"></div>
+                    <!-- <div class="w-14 indicator h-1 bg-zinc-500 rounded-lg"></div>
+                    <div class="w-14 indicator h-1 bg-zinc-500 rounded-lg"></div> -->
                 </div>
                 <div class="slider-container">
                     <!-- Slider Items -->
@@ -875,7 +868,7 @@
                         <p class="max-w-[50rem] w-full text-lg">Paperize.AI has drastically improved our workflow,
                             making patient records easily accessible and reducing our administrative burden
                         </p>
-                        <div class="flex items-center gap-2 pb-7 sm:pb-0">
+                        <div class="flex pt-10 sm:pt-0 items-center gap-2 pb-7 sm:pb-0">
                             <div class="w-5 h-[1.6px] bg-white rounded-lg"></div>
                             <div class="">
                                 <h2 class="font-medium">Selvia Octriani</h2>
@@ -885,53 +878,29 @@
                     </div>
                     <div class="slider-item flex flex-col gap-4">
                         <i class="fa-solid fa-quote-left text-4xl"></i>
-                        <p class="max-w-[50rem] w-full text-lg">Paperize.AI has drastically improved our workflow,
-                            making patient records easily accessible and reducing our administrative burden
+                        <p class="max-w-[50rem] w-full text-lg">Paperize.AI has simplified our administrative processes,
+                            allowing us to focus more on teaching and less on paperwork. It’s a game-changer for our
+                            institution.
                         </p>
                         <div class="flex items-center gap-2 pb-7 sm:pb-0">
                             <div class="w-5 h-[1.6px] bg-white rounded-lg"></div>
                             <div class="">
-                                <h2 class="font-medium">Selvia Octriani</h2>
-                                <p class="text-sm">Chief Medical Officer</p>
+                                <h2 class="font-medium">Ahmad Hamdan bin Zakir</h2>
+                                <p class="text-sm">Educator</p>
                             </div>
                         </div>
                     </div>
                     <div class="slider-item flex flex-col gap-4">
                         <i class="fa-solid fa-quote-left text-4xl"></i>
-                        <p class="max-w-[50rem] w-full text-lg">Paperize.AI has drastically improved our workflow,
-                            making patient records easily accessible and reducing our administrative burden
+                        <p class="max-w-[50rem] w-full text-lg">Paperize.AI made it incredibly easy to digitize all our
+                            medical records and lab reports. Integrating them into our EMR system was fast and accurate,
+                            streamlining our entire office workflow.
                         </p>
                         <div class="flex items-center gap-2 pb-7 sm:pb-0">
                             <div class="w-5 h-[1.6px] bg-white rounded-lg"></div>
                             <div class="">
-                                <h2 class="font-medium">Selvia Octriani</h2>
-                                <p class="text-sm">Chief Medical Officer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item flex flex-col gap-4">
-                        <i class="fa-solid fa-quote-left text-4xl"></i>
-                        <p class="max-w-[50rem] w-full text-lg">Paperize.AI has drastically improved our workflow,
-                            making patient records easily accessible and reducing our administrative burden
-                        </p>
-                        <div class="flex items-center gap-2 pb-7 sm:pb-0">
-                            <div class="w-5 h-[1.6px] bg-white rounded-lg"></div>
-                            <div class="">
-                                <h2 class="font-medium">Selvia Octriani</h2>
-                                <p class="text-sm">Chief Medical Officer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item flex flex-col gap-4">
-                        <i class="fa-solid fa-quote-left text-4xl"></i>
-                        <p class="max-w-[50rem] w-full text-lg">Paperize.AI has drastically improved our workflow,
-                            making patient records easily accessible and reducing our administrative burden
-                        </p>
-                        <div class="flex items-center gap-2 pb-7 sm:pb-0">
-                            <div class="w-5 h-[1.6px] bg-white rounded-lg"></div>
-                            <div class="">
-                                <h2 class="font-medium">Selvia Octriani</h2>
-                                <p class="text-sm">Chief Medical Officer</p>
+                                <h2 class="font-medium">Dr. Amanda </h2>
+                                <p class="text-sm">General Practitioner</p>
                             </div>
                         </div>
                     </div>
@@ -951,7 +920,7 @@
             <p class="text-center max-w-2xl mx-auto text-gray-400 mb-12">Find answers to common questions about how
                 Paperize.AI can
                 transform your document management and enhance your workflow.</p>
-    
+
             <div class="space-y-6">
                 <div class="px-3 border-b-[1.5px] border-[#F9E166]">
                     <button class="w-full text-left text-lg font-medium flex justify-between items-center py-3"
@@ -959,69 +928,69 @@
                         What is Paperize.AI?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300" id="answer0">
-                        Paperize.AI is a platform that...
+                    <div class="hidden text-gray-300 pb-3" id="answer0">
+                        Paperize.AI is an advanced AI-driven platform that transforms physical documents into digital formats, streamlining document management, enhancing efficiency, and improving data accessibility.
                     </div>
                 </div>
-    
+
                 <div class="px-3 border-b-[1.5px] border-[#F9E166]">
                     <button class="w-full text-left text-lg font-semibold flex justify-between items-center py-3"
                         onclick="toggleAccordion(1)">
                         How does Paperize.AI handle data security?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300" id="answer1">
-                        Paperize.AI handles data security by...
+                    <div class="hidden text-gray-300 pb-3" id="answer1">
+                        Paperize.AI prioritizes data security with end-to-end encryption and compliance with industry standards. We ensure that your documents are securely stored and accessible only to authorized users.
                     </div>
                 </div>
-    
+
                 <div class="px-3 border-b-[1.5px] border-[#F9E166]">
                     <button class="w-full text-left text-lg font-semibold flex justify-between items-center py-3"
                         onclick="toggleAccordion(2)">
                         Can Paperize.AI integrate with my existing systems?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300" id="answer2">
-                        Yes, Paperize.AI can integrate with...
+                    <div class="hidden text-gray-300 pb-3" id="answer2">
+                        Yes, Paperize.AI is designed to seamlessly integrate with various document management systems, ERPs, and other software, allowing you to enhance your existing workflows without disruption.
                     </div>
                 </div>
-    
+
                 <div class="px-3 border-b-[1.5px] border-[#F9E166]">
                     <button class="w-full text-left text-lg font-semibold flex justify-between items-center py-3"
                         onclick="toggleAccordion(3)">
                         What types of documents can Paperize.AI process?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300" id="answer3">
-                        Paperize.AI can process various types of documents including...
+                    <div class="hidden text-gray-300 pb-3" id="answer3">
+                        Paperize.AI can process a wide range of documents, including printed text, handwritten notes, financial records, legal documents, academic papers, and more, converting them into organized digital formats.
                     </div>
                 </div>
-    
+
                 <div class="px-3 border-b-[1.5px] border-[#F9E166]">
                     <button class="w-full text-left text-lg font-semibold flex justify-between items-center py-3"
                         onclick="toggleAccordion(4)">
                         How accurate is the OCR technology used by Paperize.AI?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300" id="answer4">
-                        The OCR technology used by Paperize.AI is highly accurate and...
+                    <div class="hidden text-gray-300 pb-3" id="answer4">
+                        Paperize.AI uses cutting-edge OCR technology with high accuracy to convert both printed and handwritten text into digital formats, minimizing errors and ensuring precise data extraction.
                     </div>
                 </div>
-    
+
                 <div class="px-3 border-b-[1.5px] border-[#F9E166]">
                     <button class="w-full text-left text-lg font-semibold flex justify-between items-center py-3"
                         onclick="toggleAccordion(5)">
                         How do I get started with Paperize.AI?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300" id="answer5">
-                        Getting started with Paperize.AI is easy. You can...
+                    <div class="hidden text-gray-300 pb-3" id="answer5">
+                        Getting started is simple. Contact us on Whatsapp and get ready experience the benefits of AI-powered digitization.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
 
     <!-- start -->
@@ -1117,6 +1086,11 @@
 <script>
     const openNav = document.getElementById("openNav")
     const closeNav = document.getElementById("closeNav")
+    const closeNav1 = document.getElementById("closeNav1")
+    const closeNav2 = document.getElementById("closeNav2")
+    const closeNav3 = document.getElementById("closeNav3")
+    const closeNav4 = document.getElementById("closeNav4")
+    const closeNav5 = document.getElementById("closeNav5")
     const widthNav = document.getElementById("widthNav")
 
     openNav.addEventListener('click', () => {
@@ -1126,6 +1100,18 @@
         widthNav.classList.remove('w-[20rem]')
         widthNav.classList.add('w-0')
     })
+
+    const closeNavElements = [closeNav1, closeNav2, closeNav3, closeNav4, closeNav5];
+
+    closeNavElements.forEach(element => {
+        if (element) {
+            element.addEventListener('click', () => {
+                widthNav.classList.remove('w-[20rem]');
+                widthNav.classList.add('w-0');
+            });
+        }
+    });
+
 
     document.addEventListener('DOMContentLoaded', () => {
         const slider = document.querySelector('.slider-container');
