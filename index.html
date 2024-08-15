@@ -29,6 +29,10 @@
         animation: fadeIn 1.5s;
     }
 
+    .fadeInfaq {
+        animation: fadeInfadeInfaq 1s;
+    }
+
     .fadeIn1 {
         animation: fadeIn1 1.5s;
     }
@@ -56,6 +60,17 @@
 
         to {
             clip-path: inset(0 0 0 0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInfadeInfaq {
+        from {
+            opacity: 0;
+        }
+
+        to {
+
             opacity: 1;
         }
     }
@@ -89,7 +104,7 @@
 
 
 <body>
-    <nav class="z-50 bgggg mb-5" id="topHead">
+    <nav class="z-50 bgggg mb-5 fixed w-full" id="topHead">
         <div class="flex justify-between items-center h-20 max-w-[80rem] mx-auto px-5 ">
             <a href=""><img src="./Docs/Assets/logo.png" class="h-8" alt=""></a>
             <div class="hidden lg:block">
@@ -102,9 +117,11 @@
                     <li><a href="#HowItWorks">How It Works</a></li>
                     <li><a href="#Testimonial">Testimonial</a></li>
                     <li><a href="#FAQ">FAQ</a></li>
-                    <button
-                        class="border-[1.5px] border-white px-8 py-2 hover:bg-white hover:text-black transition-all  hover:shadow-xl">Let's
-                        talk</button>
+                    <a href="#startYourJounery">
+                        <button
+                            class="border-[1.5px] border-white px-8 py-2 hover:bg-white hover:text-black transition-all  hover:shadow-xl">Let's
+                            talk</button>
+                    </a>
                 </ul>
             </div>
             <i class="fa-solid fa-bars cursor-pointer text-2xl block lg:hidden" id="openNav"></i>
@@ -132,8 +149,8 @@
     </div>
 
 
-    <div class="relative overflow-hidden">
-        <div class="absolute w-full h-full -bottom-[70%] sm:-bottom-[50%] ">
+    <div class="relative overflow-hidden ">
+        <div class="absolute w-full h-full -bottom-[70%] sm:-bottom-[50%] z-10">
             <svg viewBox="0 0 1440 1619" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <desc>
@@ -168,14 +185,14 @@
                     </g>
                 </g>
             </svg>
-
         </div>
 
 
 
-        <div class="flex  justify-between items-center sm:min-h-screen min-h-[80vh] gap-10 overflow-hidden">
+        <div
+            class="flex sm:mt-20 mt-12 z-20 justify-between items-center sm:min-h-screen min-h-[80vh] gap-10 overflow-hidden">
             <!-- left -->
-            <div class="max-w-xl sm:pl-10 px-2 fadeIn1 ">
+            <div class="max-w-xl sm:pl-10 px-2 fadeIn1 z-30 ">
                 <h1 class="sm:text-6xl text-4xl z-50 font-light ">Empowering your Document
                     Digitalization with
                     Paperize.AI
@@ -187,26 +204,16 @@
                     database with ease. Our AI-powered system simplifies the process, ensuring efficient data handling
                     and
                     storage.</p>
-                <button
-                    class="border-[1.5px] z-50 border-white px-8 py-2 bg-white hover:bg-transparent hover:text-white font-semibold  text-black transition-all  hover:shadow-xl">Let's
-                    talk</button>
+                <a href="#startYourJounery" class="z-20">
+                    <button
+                        class="border-[1.5px] z-50 border-white px-8 py-2 bg-white hover:bg-transparent hover:text-white font-semibold  text-black transition-all  hover:shadow-xl z-50">Let's
+                        talk</button>
+                </a>
             </div>
             <!-- right -->
 
             <div class=" hidden lg:block relative w-[600px] h-[600px] -mr-32">
                 <div class="absolute inset-0 border border-transparent rounded-full">
-                    <!-- The Circle Border -->
-                    <!-- <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <circle cx="50" cy="50" r="48" stroke="url(#grad1)" stroke-width=".4" fill="none" />
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#65ACF5;stop-opacity:1" />
-                                <stop offset="50%" style="stop-color:#E96C9A;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#F39F67;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                    </svg> -->
-
 
                     <svg class="z-10 w-full h-full" viewBox="0 0 679.18 679.179" fill="none"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -234,7 +241,7 @@
                 </div>
                 <!-- Section 1 -->
                 <div
-                    class="comeLeft absolute flex items-center justify-start left-[3%] top-[10%] w-[26rem] bg-gradient-to-r from-[#202020] to-[#1B1B1B] rounded-lg p-3 pr-1">
+                    class="comeLeft hover:left-[0%] absolute flex items-center justify-start left-[3%] top-[10%] w-[26rem] bg-gradient-to-r from-[#202020] to-[#1B1B1B] rounded-lg p-3 pr-1 hover:scale-105 transition-all duration-500">
                     <div class="w-20 mr-3">
                         <svg width="70" height="70" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -291,7 +298,7 @@
                 </div>
                 <!-- Section 2 -->
                 <div
-                    class="absolute fadeIn flex items-center justify-start left-[-10%] top-[50%] transform -translate-y-1/2 w-[26rem] bg-gradient-to-r from-[#202020] to-[#1B1B1B] rounded-lg p-4">
+                    class="absolute hover:left-[-13%] hover:scale-105 transition-all duration-500 fadeIn flex items-center justify-start left-[-10%] top-[50%] transform -translate-y-1/2 w-[26rem] bg-gradient-to-r from-[#202020] to-[#1B1B1B] rounded-lg p-4">
                     <div class="w-20 mr-4"><svg width="70" height="70" viewBox="0 0 87 87" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_162_2228)">
@@ -385,7 +392,7 @@
                 </div>
                 <!-- Section 3 -->
                 <div
-                    class="absolute comeLeft flex items-center justify-start left-[3%] bottom-[10%] w-[26rem] bg-gradient-to-r from-[#202020] to-[#1B1B1B] rounded-lg p-3">
+                    class="absolute hover:scale-105 transition-all duration-500 comeLeft flex items-center justify-start left-[3%] hover:left-[0%] bottom-[10%] w-[26rem] bg-gradient-to-r from-[#202020] to-[#1B1B1B] rounded-lg p-3">
                     <div class="w-20 mr-3"><svg width="70" height="70" viewBox="0 0 87 87" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -491,306 +498,81 @@
                 features are designed to enhance your workflow and boost efficiency.</p>
         </div>
 
-        <div class="sm:mt-20 mt-10 max-w-[75rem] flex justify-center items-center flex-wrap w-full mx-auto">
-            <div
-                class=" md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 md:p-8 p-4 border-r-2 border-b-2 md:h-[20rem] h-[15rem] bg-[#1b1b1b] border-[#3c3c3c] feature-card">
-                <svg width="51.337891" height="51.846191" viewBox="0 0 51.3379 51.8462" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <desc>
-                        Created with Pixso.
-                    </desc>
-                    <defs />
-                    <path id="Vector"
-                        d="M4 50.83C2.2 50.83 0.75 49.38 0.75 47.58L0.75 19.42C0.75 17.62 2.2 16.17 4 16.17L32.16 16.17C33.96 16.17 35.41 17.62 35.41 19.42L35.41 47.58C35.41 49.38 33.96 50.83 32.16 50.83L4 50.83Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector" d="M7.25 27L28.91 27" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M7.25 33.5L28.91 33.5" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M7.25 40L28.91 40" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector"
-                        d="M15.91 16.17L15.91 4.25C15.91 2.46 17.37 1 19.16 1L47.33 1C49.13 1 50.58 2.46 50.58 4.25L50.58 32.42C50.58 34.21 49.13 35.67 47.33 35.67L35.41 35.67"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M22.41 11.83L44.08 11.83" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M35.41 18.33L44.08 18.33" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M35.41 24.83L44.08 24.83" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="XMLID_1735_" d="M7.25 1L11.58 3.17L9.41 7.5" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="XMLID_1734_" d="M0.75 14C0.77 8.28 5.46 4.27 10.84 3.28" stroke="#FFFFFF"
-                        stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="XMLID_1425_" d="M44.08 50.83L39.75 48.67L41.91 44.33" stroke="#FFFFFF"
-                        stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="XMLID_1424_" d="M50.58 37.83C50.56 43.5 45.97 47.47 40.66 48.52" stroke="#FFFFFF"
-                        stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                </svg>
-
-                <div class="">
+        <div class="sm:mt-20 mt-10 max-w-[75rem] flex justify-center  h-full flex-wrap w-full mx-auto">
+            <div data-feature="feature1"
+                class="feature-item md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 md:p-8 p-4 border-r-2 border-b-2 md:min-h-[20rem] min-h-[15rem]  bg-[#1b1b1b] border-[#3c3c3c]">
+                <div class="w-full">
+                    <img src="./Docs/Assets/SVGs/1.svg" class="h-14" alt="">
+                </div>
+                <div>
                     <p class="sm:text-2xl text-md font-light">Advanced Optical Character Recognition (OCR)</p>
-                    <p class="text-sm pt-3 hidden sm:block feature-description">Our OCR technology accurately converts
+                    <p class="text-sm pt-3 hidden sm:block">Our OCR technology accurately converts
                         printed and handwritten text into digital data. It’s designed to handle various document types,
                         ensuring that all your information is easily accessible and searchable.</p>
                 </div>
             </div>
-            <div
-                class="md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 md:p-8 p-4 sm:border-r-2 border-b-2 md:h-[20rem] h-[15rem] bg-[#1b1b1b] border-[#3c3c3c] feature-card">
-
-
-
-
-
-                <svg width="58.000000" height="58.000000" viewBox="0 0 58 58" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <desc>
-                        Created with Pixso.
-                    </desc>
-                    <defs>
-                        <clipPath id="clip162_3091">
-                            <rect id="server-database-data-store-load-balance-2 1" rx="-0.500000" width="57.000000"
-                                height="57.000000" transform="translate(0.500000 0.500000)" fill="white"
-                                fill-opacity="0" />
-                        </clipPath>
-                    </defs>
-                    <rect id="server-database-data-store-load-balance-2 1" rx="-0.500000" width="57.000000"
-                        height="57.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
-                    <g clip-path="url(#clip162_3091)">
-                        <path id="Vector"
-                            d="M25.37 54.37C24.04 54.37 22.95 53.29 22.95 51.95L22.95 44.7C22.95 43.37 24.04 42.29 25.37 42.29L32.62 42.29C33.96 42.29 35.04 43.37 35.04 44.7L35.04 51.95C35.04 53.29 33.96 54.37 32.62 54.37L25.37 54.37Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector"
-                            d="M6.04 54.37C4.7 54.37 3.62 53.29 3.62 51.95L3.62 44.7C3.62 43.37 4.7 42.29 6.04 42.29L13.29 42.29C14.62 42.29 15.7 43.37 15.7 44.7L15.7 51.95C15.7 53.29 14.62 54.37 13.29 54.37L6.04 54.37Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector"
-                            d="M44.7 54.37C43.37 54.37 42.29 53.29 42.29 51.95L42.29 44.7C42.29 43.37 43.37 42.29 44.7 42.29L51.95 42.29C53.29 42.29 54.37 43.37 54.37 44.7L54.37 51.95C54.37 53.29 53.29 54.37 51.95 54.37L44.7 54.37Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector" d="M29 15.7L29 36.25" stroke="#FFFFFF" stroke-opacity="1.000000"
-                            stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector" d="M29 15.7C29 26.73 48.33 15.25 48.33 36.25" stroke="#FFFFFF"
-                            stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector" d="M29 15.7C29 26.73 9.66 15.25 9.66 36.25" stroke="#FFFFFF"
-                            stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector" d="M4.83 32.62L9.66 37.45L14.5 32.62" stroke="#FFFFFF"
-                            stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector" d="M24.16 32.62L29 37.45L33.83 32.62" stroke="#FFFFFF"
-                            stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector" d="M43.5 32.62L48.33 37.45L53.16 32.62" stroke="#FFFFFF"
-                            stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector"
-                            d="M12.08 15.7C10.08 15.7 8.45 14.08 8.45 12.08L8.45 7.25C8.45 5.24 10.08 3.62 12.08 3.62L45.91 3.62C47.91 3.62 49.54 5.24 49.54 7.25L49.54 12.08C49.54 14.08 47.91 15.7 45.91 15.7L12.08 15.7Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector" d="M13.29 8.45L13.29 10.87" stroke="#FFFFFF" stroke-opacity="1.000000"
-                            stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector" d="M18.12 8.45L18.12 10.87" stroke="#FFFFFF" stroke-opacity="1.000000"
-                            stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector" d="M22.95 8.45L22.95 10.87" stroke="#FFFFFF" stroke-opacity="1.000000"
-                            stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector"
-                            d="M43.5 10.87C42.83 10.87 42.29 10.33 42.29 9.66C42.29 8.99 42.83 8.45 43.5 8.45C44.16 8.45 44.7 8.99 44.7 9.66C44.7 10.33 44.16 10.87 43.5 10.87Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector"
-                            d="M36.25 10.87C35.58 10.87 35.04 10.33 35.04 9.66C35.04 8.99 35.58 8.45 36.25 8.45C36.91 8.45 37.45 8.99 37.45 9.66C37.45 10.33 36.91 10.87 36.25 10.87Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector"
-                            d="M12.08 15.7C10.08 15.7 8.45 14.08 8.45 12.08L8.45 7.25C8.45 5.24 10.08 3.62 12.08 3.62L45.91 3.62C47.91 3.62 49.54 5.24 49.54 7.25L49.54 12.08C49.54 14.08 47.91 15.7 45.91 15.7L12.08 15.7Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    </g>
-                </svg>
-
-
-
-                <div class="">
+            <div data-feature="feature2"
+                class="feature-item md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 md:p-8 p-4 sm:border-r-2 border-b-2 md:min-h-[20rem] min-h-[15rem]  bg-[#1b1b1b] border-[#3c3c3c]">
+                <div class="w-full">
+                    <img src="./Docs/Assets/SVGs/2.svg" class="h-14" alt="">
+                </div>
+                <div>
                     <p class="sm:text-2xl text-md font-light">Intelligent Data Extraction</p>
-                    <p class="text-sm pt-3 hidden sm:block feature-description">Paperize.AI’s intelligent algorithms
+                    <p class="text-sm pt-3 hidden sm:block">Paperize.AI’s intelligent algorithms
                         automatically extract key data points like names, dates, and figures, allowing you to streamline
                         data entry and minimize manual errors.</p>
                 </div>
             </div>
-            <div
-                class="md:max-w-[23rem] sm:max-w-[18rem] max-w-[9.8rem] md:p-8 p-4 md:h-[20rem] h-[15rem] hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 bg-[#1b1b1b] sm:border-b-2 sm:border-[#3c3c3c] feature-card">
-
-                <svg width="57.083496" height="57.083252" viewBox="0 0 57.0835 57.0833" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <desc>
-                        Created with Pixso.
-                    </desc>
-                    <defs />
-                    <path id="Vector" d="M5.58 0.75L5.58 56.33" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M0.75 51.5L56.33 51.5" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M49.68 26.47L36.39 37.86" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M18.37 31.45L5.58 44.25" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M32.6 38.1L22.05 31.06" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M49.43 6.76L36.64 14.07" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M18.71 13.56L5.58 32.16" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M32.28 14.67L22.38 12.2" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector"
-                        d="M20.08 32.16C18.74 32.16 17.66 31.08 17.66 29.75C17.66 28.41 18.74 27.33 20.08 27.33C21.41 27.33 22.5 28.41 22.5 29.75C22.5 31.08 21.41 32.16 20.08 32.16Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M34.58 41.83C33.24 41.83 32.16 40.75 32.16 39.41C32.16 38.08 33.24 37 34.58 37C35.91 37 37 38.08 37 39.41C37 40.75 35.91 41.83 34.58 41.83Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M51.5 27.33C50.16 27.33 49.08 26.25 49.08 24.91C49.08 23.58 50.16 22.5 51.5 22.5C52.83 22.5 53.91 23.58 53.91 24.91C53.91 26.25 52.83 27.33 51.5 27.33Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M20.08 14.04C18.74 14.04 17.66 12.96 17.66 11.62C17.66 10.29 18.74 9.2 20.08 9.2C21.41 9.2 22.5 10.29 22.5 11.62C22.5 12.96 21.41 14.04 20.08 14.04Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M34.58 17.66C33.24 17.66 32.16 16.58 32.16 15.25C32.16 13.91 33.24 12.83 34.58 12.83C35.91 12.83 37 13.91 37 15.25C37 16.58 35.91 17.66 34.58 17.66Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M51.5 8C50.16 8 49.08 6.91 49.08 5.58C49.08 4.24 50.16 3.16 51.5 3.16C52.83 3.16 53.91 4.24 53.91 5.58C53.91 6.91 52.83 8 51.5 8Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                </svg>
-
-                <div class="">
+            <div data-feature="feature3"
+                class="feature-item md:max-w-[23rem] sm:max-w-[18rem] max-w-[9.8rem] md:p-8 p-4 md:min-h-[20rem] min-h-[15rem]  hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 bg-[#1b1b1b] sm:border-b-2 sm:border-[#3c3c3c]">
+                <div class="w-full">
+                    <img src="./Docs/Assets/SVGs/3.svg" class="h-14" alt="">
+                </div>
+                <div>
                     <p class="sm:text-2xl text-md font-light">Real-Time Document Processing</p>
-                    <p class="text-sm pt-3 hidden sm:block feature-description">“With real-time processing capabilities,
+                    <p class="text-sm pt-3 hidden sm:block">“With real-time processing capabilities,
                         Paperize.AI ensures that your documents are digitized and organized instantly, providing
                         immediate access to critical information when you need it.”</p>
                 </div>
             </div>
-
-
-            <div
-                class="md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] md:p-8 p-4 md:h-[20rem] bg-[#1b1b1b] h-[15rem] transition-all w-full flex flex-col sm:justify-center gap-8 sm:border-r-2 sm:border-l-0 border-l-2   feature-card border-[#3c3c3c]">
-                <svg width="57.566895" height="57.566406" viewBox="0 0 57.5669 57.5664" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <desc>
-                        Created with Pixso.
-                    </desc>
-                    <defs />
-                    <path id="Vector"
-                        d="M47.14 56.81C41.81 56.81 37.48 52.48 37.48 47.14C37.48 41.81 41.81 37.48 47.14 37.48C52.48 37.48 56.81 41.81 56.81 47.14C56.81 52.48 52.48 56.81 47.14 56.81Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M10.41 39.41C5.07 39.41 0.75 35.08 0.75 29.75C0.75 24.41 5.07 20.08 10.41 20.08C15.75 20.08 20.08 24.41 20.08 29.75C20.08 35.08 15.75 39.41 10.41 39.41Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M39.41 20.08C34.07 20.08 29.75 15.75 29.75 10.41C29.75 5.07 34.07 0.75 39.41 0.75C44.75 0.75 49.08 5.07 49.08 10.41C49.08 15.75 44.75 20.08 39.41 20.08Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector"
-                        d="M50.24 20.07C51.96 23.23 52.94 26.86 52.94 30.71C52.94 33.46 52.44 36.1 51.53 38.53"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M13.88 16.18C17.76 11.69 23.41 8.77 29.75 8.5" stroke="#FFFFFF"
-                        stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M30.71 52.94C21.51 52.94 13.62 47.36 10.24 39.4" stroke="#FFFFFF"
-                        stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square" />
-                </svg>
-
-                <div class="">
+            <div data-feature="feature4"
+                class="feature-item md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] md:p-8 p-4  bg-[#1b1b1b] transition-all w-full flex flex-col sm:justify-center gap-8 sm:border-r-2 sm:border-l-0 border-l-2 hover:bg-zinc-800 md:min-h-[20rem] min-h-[15rem]  border-[#3c3c3c]">
+                <div class="w-full">
+                    <img src="./Docs/Assets/SVGs/4.svg" class="h-14" alt="">
+                </div>
+                <div>
                     <p class="sm:text-2xl text-md font-light">AI-Powered Accuracy Verification</p>
-                    <p class="text-sm pt-3 hidden sm:block feature-description">Our AI algorithms flag areas with low
-                        confidence for user
-                        verification,
-                        ensuring
-                        the highest level of accuracy in your digitized documents</p>
+                    <p class="text-sm pt-3 hidden sm:block">Our AI algorithms flag areas with low confidence for user
+                        verification, ensuring the highest level of accuracy in your digitized documents</p>
                 </div>
             </div>
-            <div
-                class="md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] md:p-8 p-4 md:h-[20rem] bg-[#1b1b1b] h-[15rem] transition-all w-full flex flex-col sm:justify-center gap-8 sm:border-r-2 sm:border-l-0 border-l-2   feature-card border-[#3c3c3c]">
-                <svg width="58.000000" height="58.000000" viewBox="0 0 58 58" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <desc>
-                        Created with Pixso.
-                    </desc>
-                    <defs>
-                        <clipPath id="clip162_3145">
-                            <rect id="chart-infographic-insight-analytics-presentation-flow-3" rx="-0.500000"
-                                width="57.000000" height="57.000000" transform="translate(0.500000 0.500000)"
-                                fill="white" fill-opacity="0" />
-                        </clipPath>
-                    </defs>
-                    <rect id="chart-infographic-insight-analytics-presentation-flow-3" rx="-0.500000" width="57.000000"
-                        height="57.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0" />
-                    <g clip-path="url(#clip162_3145)">
-                        <path id="Vector"
-                            d="M44.7 49.54L36.25 49.54C34.24 49.54 32.62 47.91 32.62 45.91L32.62 12.08C32.62 10.08 34.24 8.45 36.25 8.45L44.7 8.45"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"
-                            stroke-linecap="square" />
-                        <path id="Vector" d="M20.54 29L44.7 29" stroke="#FFFFFF" stroke-opacity="1.000000"
-                            stroke-width="1.500000" stroke-linecap="square" />
-                        <path id="Vector"
-                            d="M51.95 13.29C53.29 13.29 54.37 12.2 54.37 10.87L54.37 6.04C54.37 4.7 53.29 3.62 51.95 3.62L47.12 3.62C45.79 3.62 44.7 4.7 44.7 6.04L44.7 10.87C44.7 12.2 45.79 13.29 47.12 13.29L51.95 13.29Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector"
-                            d="M51.95 33.83C53.29 33.83 54.37 32.75 54.37 31.41L54.37 26.58C54.37 25.24 53.29 24.16 51.95 24.16L47.12 24.16C45.79 24.16 44.7 25.24 44.7 26.58L44.7 31.41C44.7 32.75 45.79 33.83 47.12 33.83L51.95 33.83Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <path id="Vector"
-                            d="M51.95 54.37C53.29 54.37 54.37 53.29 54.37 51.95L54.37 47.12C54.37 45.79 53.29 44.7 51.95 44.7L47.12 44.7C45.79 44.7 44.7 45.79 44.7 47.12L44.7 51.95C44.7 53.29 45.79 54.37 47.12 54.37L51.95 54.37Z"
-                            stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                        <rect id="Rectangle 602" x="4.833496" y="21.750000" rx="7.250000" width="14.500000"
-                            height="14.500000" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    </g>
-                </svg>
-
-                <div class="">
+            <div data-feature="feature5"
+                class="feature-item md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] md:p-8 p-4  bg-[#1b1b1b] transition-all w-full flex flex-col sm:justify-center gap-8 border-r-2 sm:border-t-0 border-t-2 hover:bg-zinc-800 md:min-h-[20rem] min-h-[15rem]  border-[#3c3c3c]">
+                <div class="w-full">
+                    <img src="./Docs/Assets/SVGs/5.svg" class="h-14" alt="">
+                </div>
+                <div>
                     <p class="sm:text-2xl text-md font-light">Seamless Integration with Existing Systems</p>
-                    <p class="text-sm pt-3 hidden sm:block feature-description">Paperize.AI is designed to easily
-                        integrate with your
-                        current software and workflows, including EMR systems, document management systems, and other
-                        enterprise solutions.</p>
+                    <p class="text-sm pt-3 hidden sm:block">Paperize.AI is designed to easily
+                        integrate with your current software and workflows, including EMR systems, document management
+                        systems, and other enterprise solutions.</p>
                 </div>
             </div>
-
-            <div
-                class="md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] md:p-8 p-4 md:h-[20rem] h-[15rem] hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 border-t-2 sm:border-t-0 bg-[#1b1b1b] feature-card border-[#3c3c3c]">
-                <svg width="57.083496" height="57.083008" viewBox="0 0 57.0835 57.083" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <desc>
-                        Created with Pixso.
-                    </desc>
-                    <defs />
-                    <path id="XMLID_1314_"
-                        d="M1.95 51.49C1.29 51.49 0.75 50.95 0.75 50.29L0.75 38.2C0.75 37.54 1.29 36.99 1.95 36.99L18.87 36.99C19.54 36.99 20.08 37.54 20.08 38.2L20.08 50.29C20.08 50.95 19.54 51.49 18.87 51.49L1.95 51.49Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector" d="M10.41 51.49L10.41 56.33" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M6.79 56.33L14.04 56.33" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="XMLID_1307_"
-                        d="M38.2 51.49C37.54 51.49 37 50.95 37 50.29L37 38.2C37 37.54 37.54 36.99 38.2 36.99L55.12 36.99C55.79 36.99 56.33 37.54 56.33 38.2L56.33 50.29C56.33 50.95 55.79 51.49 55.12 51.49L38.2 51.49Z"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector" d="M46.66 51.49L46.66 56.33" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M43.04 56.33L50.29 56.33" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M28.54 17.66L28.54 24.91" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M10.41 37L10.41 27.33L26.12 27.33" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="XMLID_1313_"
-                        d="M26.17 7.94C25.09 6.48 23.38 5.54 21.45 5.54C18.18 5.54 15.54 8.22 15.54 11.54C15.54 14.85 18.18 17.54 21.45 17.54L36.81 17.54C39.42 17.54 41.54 15.39 41.54 12.74C41.54 10.09 39.42 7.94 36.81 7.94"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="XMLID_1312_"
-                        d="M38.1 8.13C37.56 3.97 34.05 0.75 29.74 0.75C26.34 0.75 23.43 2.76 22.09 5.66"
-                        stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" />
-                    <path id="Vector" d="M30.95 27.33L46.66 27.33L46.66 37" stroke="#FFFFFF" stroke-opacity="1.000000"
-                        stroke-width="1.500000" stroke-linecap="square" />
-                    <path id="Vector" d="M30.95 24.91L30.95 29.74L26.12 29.74L26.12 24.91L30.95 24.91Z" stroke="#FFFFFF"
-                        stroke-opacity="1.000000" stroke-width="1.500000" />
-                </svg>
-
-                <div class="">
+            <div data-feature="feature6"
+                class="feature-item md:max-w-[23rem] sm:max-w-[18rem] max-w-[10rem] md:p-8 p-4 md:min-h-[20rem] min-h-[15rem]  hover:bg-zinc-800 transition-all w-full flex flex-col sm:justify-center gap-8 border-t-2 sm:border-t-0 bg-[#1b1b1b] border-[#3c3c3c]">
+                <div class="w-full">
+                    <img src="./Docs/Assets/SVGs/6.svg" class="h-14" alt="">
+                </div>
+                <div>
                     <p class="sm:text-2xl text-md font-light">Robust Data Security</p>
-                    <p class="text-sm pt-3 hidden sm:block feature-description">Security is our top priority.
-                        Paperize.AI uses advanced
-                        encryption protocols and secure cloud storage to protect your data, ensuring that your
-                        information remains confidential and safe from unauthorized access.</p>
+                    <p class="text-sm pt-3 hidden sm:block">Security is our top priority.
+                        Paperize.AI uses advanced encryption protocols and secure cloud storage to protect your data,
+                        ensuring that your information remains confidential and safe from unauthorized access.</p>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <!-- How Paperize.AI Works -->
@@ -964,13 +746,13 @@
                 transform your document management and enhance your workflow.</p>
 
             <div class="space-y-6">
-                <div class="px-3 border-b-[1.5px] border-[#F9E166]">
+                <div class="px-3 border-b-[1.5px] border-[#F9E166] ">
                     <button class="w-full text-left text-lg font-medium flex justify-between items-center py-3"
                         onclick="toggleAccordion(0)">
                         What is Paperize.AI?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300 pb-3" id="answer0">
+                    <div class="hidden text-gray-300 pb-3 fadeInfaq" id="answer0">
                         Paperize.AI is an advanced AI-driven platform that transforms physical documents into digital
                         formats, streamlining document management, enhancing efficiency, and improving data
                         accessibility.
@@ -983,7 +765,7 @@
                         How does Paperize.AI handle data security?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300 pb-3" id="answer1">
+                    <div class="hidden text-gray-300 pb-3 fadeInfaq" id="answer1">
                         Paperize.AI prioritizes data security with end-to-end encryption and compliance with industry
                         standards. We ensure that your documents are securely stored and accessible only to authorized
                         users.
@@ -996,7 +778,7 @@
                         Can Paperize.AI integrate with my existing systems?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300 pb-3" id="answer2">
+                    <div class="hidden text-gray-300 pb-3 fadeInfaq" id="answer2">
                         Yes, Paperize.AI is designed to seamlessly integrate with various document management systems,
                         ERPs, and other software, allowing you to enhance your existing workflows without disruption.
                     </div>
@@ -1008,7 +790,7 @@
                         What types of documents can Paperize.AI process?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300 pb-3" id="answer3">
+                    <div class="hidden text-gray-300 pb-3 fadeInfaq" id="answer3">
                         Paperize.AI can process a wide range of documents, including printed text, handwritten notes,
                         financial records, legal documents, academic papers, and more, converting them into organized
                         digital formats.
@@ -1021,7 +803,7 @@
                         How accurate is the OCR technology used by Paperize.AI?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300 pb-3" id="answer4">
+                    <div class="hidden text-gray-300 pb-3 fadeInfaq" id="answer4">
                         Paperize.AI uses cutting-edge OCR technology with high accuracy to convert both printed and
                         handwritten text into digital formats, minimizing errors and ensuring precise data extraction.
                     </div>
@@ -1033,7 +815,7 @@
                         How do I get started with Paperize.AI?
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <div class="hidden text-gray-300 pb-3" id="answer5">
+                    <div class="hidden text-gray-300 pb-3 fadeInfaq" id="answer5">
                         Getting started is simple. Contact us on Whatsapp and get ready experience the benefits of
                         AI-powered digitization.
                     </div>
@@ -1046,7 +828,7 @@
 
     <!-- start -->
 
-    <div class="relative overflow-hidden max-w-[70rem] w-full mt-20 mx-auto p-2 mb-10">
+    <div id="startYourJounery" class="relative overflow-hidden max-w-[70rem] w-full mt-20 mx-auto p-2 mb-10">
         <div class="flex justify-center relative rounded-3xl overflow-hidden  p-5 sm:pr-0 items-center gap-8">
             <div class="h-[20rem] lg:hidden w-[35rem] -bottom-12  -left-16 bg-[#7155f6] absolute rounded-full blur-3xl">
             </div>
@@ -1122,9 +904,7 @@
                     Talk via WhatsApp <i class="fa-brands fa-whatsapp text-3xl"></i></button>
             </div>
 
-            <div class="z-50 max-w-[50%] w-full flex justify-end">
-                <img src="./Docs/Assets/startImg1.png" alt="ai" class="hidden lg:block z-50 max-h-[25rem]">
-            </div>
+            <img src="./Docs/Assets/startImg1.png" alt="ai" class="hidden lg:block z-10 max-h-[25rem]">
         </div>
     </div>
 
@@ -1265,28 +1045,60 @@
     }
 
 
+    //    =========
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // Select all feature cards
-        const featureCards = document.querySelectorAll('.feature-card');
+    document.addEventListener("DOMContentLoaded", function () {
+        const featureItems = document.querySelectorAll('.feature-item');
+        const defaultActiveFeature = document.querySelector('[data-feature="feature4"]'); // The 4th div
 
-        // Add 'featuresgredient' class to the first card by default
-        featureCards[3].classList.add('featuresgredient');
-        featureCards[0].querySelector('.feature-description').style.display = 'block';
+        // Initially hide all second paragraphs
+        featureItems.forEach(div => {
+            const paragraph = div.querySelector('p.hidden');
+            if (paragraph) {
+                paragraph.style.display = 'none';  // Ensure paragraphs are hidden by default
+            }
+        });
 
-        // Loop through each card and add click event
-        featureCards.forEach((card, index) => {
-            card.addEventListener('click', () => {
-                // Remove 'featuresgredient' class from all cards
-                featureCards.forEach(c => {
-                    c.classList.remove('featuresgredient');
-                    c.querySelector('.feature-description').style.display = 'none';
+        // Set the default active div and show its paragraph
+        if (window.innerWidth > 500) {
+            defaultActiveFeature.classList.add('featuresgredient');
+            const defaultParagraph = defaultActiveFeature.querySelector('p.hidden');
+            if (defaultParagraph) {
+                defaultParagraph.style.display = 'block';
+                defaultParagraph.classList.add('fade-in');
+            }
+        }
+
+        // Add click event listeners to each div
+        featureItems.forEach(div => {
+            div.addEventListener('click', function () {
+                // Remove featuresgredient class from all divs
+                featureItems.forEach(item => item.classList.remove('featuresgredient'));
+
+                // Hide all paragraphs
+                featureItems.forEach(item => {
+                    const para = item.querySelector('p.hidden');
+                    if (para) {
+                        para.style.display = 'none';
+                        para.classList.remove('fade-in'); // Remove the animation class to reset it
+                    }
                 });
 
-                // Add 'featuresgredient' class to the clicked card and show the description
-                card.classList.add('featuresgredient');
-                card.querySelector('.feature-description').style.display = 'block';
+                // Add featuresgredient class to the clicked div
+                div.classList.add('featuresgredient');
+
+                // Show the paragraph with a fade-in animation
+                const paragraph = div.querySelector('p.hidden');
+                if (paragraph) {
+                    paragraph.style.display = 'block';
+                    paragraph.classList.add('fade-in');
+
+                    // Remove the animation class after the animation ends, so it can be reapplied
+                    paragraph.addEventListener('animationend', function () {
+                        paragraph.classList.remove('fade-in');
+                    }, { once: true });
+                }
             });
         });
     });

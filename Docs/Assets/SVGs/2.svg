@@ -1,0 +1,29 @@
+<svg width="58.000000" height="58.000000" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip162_3091">
+			<rect rx="-0.500000" width="57.000000" height="57.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect rx="-0.500000" width="57.000000" height="57.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip162_3091)">
+		<path d="M25.37 54.37C24.04 54.37 22.95 53.29 22.95 51.95L22.95 44.7C22.95 43.37 24.04 42.29 25.37 42.29L32.62 42.29C33.96 42.29 35.04 43.37 35.04 44.7L35.04 51.95C35.04 53.29 33.96 54.37 32.62 54.37L25.37 54.37Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path d="M6.04 54.37C4.7 54.37 3.62 53.29 3.62 51.95L3.62 44.7C3.62 43.37 4.7 42.29 6.04 42.29L13.29 42.29C14.62 42.29 15.7 43.37 15.7 44.7L15.7 51.95C15.7 53.29 14.62 54.37 13.29 54.37L6.04 54.37Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path d="M44.7 54.37C43.37 54.37 42.29 53.29 42.29 51.95L42.29 44.7C42.29 43.37 43.37 42.29 44.7 42.29L51.95 42.29C53.29 42.29 54.37 43.37 54.37 44.7L54.37 51.95C54.37 53.29 53.29 54.37 51.95 54.37L44.7 54.37Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path d="M29 15.7L29 36.25" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M29 15.7C29 26.73 48.33 15.25 48.33 36.25" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M29 15.7C29 26.73 9.66 15.25 9.66 36.25" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M4.83 32.62L9.66 37.45L14.5 32.62" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M24.16 32.62L29 37.45L33.83 32.62" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M43.5 32.62L48.33 37.45L53.16 32.62" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M12.08 15.7C10.08 15.7 8.45 14.08 8.45 12.08L8.45 7.25C8.45 5.24 10.08 3.62 12.08 3.62L45.91 3.62C47.91 3.62 49.54 5.24 49.54 7.25L49.54 12.08C49.54 14.08 47.91 15.7 45.91 15.7L12.08 15.7Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path d="M13.29 8.45L13.29 10.87" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M18.12 8.45L18.12 10.87" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M22.95 8.45L22.95 10.87" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="square"/>
+		<path d="M43.5 10.87C42.83 10.87 42.29 10.33 42.29 9.66C42.29 8.99 42.83 8.45 43.5 8.45C44.16 8.45 44.7 8.99 44.7 9.66C44.7 10.33 44.16 10.87 43.5 10.87Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path d="M36.25 10.87C35.58 10.87 35.04 10.33 35.04 9.66C35.04 8.99 35.58 8.45 36.25 8.45C36.91 8.45 37.45 8.99 37.45 9.66C37.45 10.33 36.91 10.87 36.25 10.87Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path d="M12.08 15.7C10.08 15.7 8.45 14.08 8.45 12.08L8.45 7.25C8.45 5.24 10.08 3.62 12.08 3.62L45.91 3.62C47.91 3.62 49.54 5.24 49.54 7.25L49.54 12.08C49.54 14.08 47.91 15.7 45.91 15.7L12.08 15.7Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+	</g>
+</svg>

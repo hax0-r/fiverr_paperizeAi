@@ -42,8 +42,43 @@ nav {
             /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
             , rgb(255, 255, 255);
         transition: 200ms all;
+        animation: fadeInnnn2 0.5s ease-in-out;
     }
 }
+
+.hidden {
+    display: none;
+}
+
+/* .featuresgredient {
+    background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+} */
+
+.fade-in {
+    animation: fadeInnnn 0.5s ease-in-out;
+}
+
+@keyframes fadeInnnn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInnnn2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 .sliderBg {
     box-sizing: border-box;
@@ -94,14 +129,3 @@ nav {
     background: url(../Docs/Assets/workBg.png) center;
     background-size: cover;
 } */
-
-.feature-description {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.featuresgredient .feature-description {
-    display: block;
-    opacity: 1;
-}
