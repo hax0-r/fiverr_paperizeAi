@@ -36,11 +36,13 @@ nav {
     background-size: cover;
 }
 
-.featuresgredient {
-    background: radial-gradient(132.00% 141.42% at 0% 100%, rgb(28, 47, 99), rgb(105, 65, 198) 48.032%, rgb(247, 157, 0) 84.783%, rgb(164, 95, 43) 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-        , rgb(255, 255, 255);
-    transition: 200ms all;
+@media screen and (min-width:500px) {
+    .featuresgredient {
+        background: radial-gradient(132.00% 141.42% at 0% 100%, rgb(28, 47, 99), rgb(105, 65, 198) 48.032%, rgb(247, 157, 0) 84.783%, rgb(164, 95, 43) 100%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+            , rgb(255, 255, 255);
+        transition: 200ms all;
+    }
 }
 
 .sliderBg {
