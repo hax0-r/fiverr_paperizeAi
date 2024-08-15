@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonial Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .testimonial-container {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .indicator-active {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white flex items-center justify-center min-h-screen">
+    <div class="relative w-full max-w-3xl mx-auto">
+        <!-- Slider Container -->
+        <div id="testimonialSlider" class="overflow-hidden rounded-lg">
+            <div class="testimonial-container flex">
+                <!-- Slide 1 -->
+                <div class="testimonial-slide flex-none bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 p-8 rounded-lg">
+                    <div class="mb-4">
+                        <div class="w-1/3 h-1 bg-white mb-4"></div>
+                    </div>
+                    <p class="text-xl mb-4">"Paperize.AI has drastically improved our workflow, making patient records
+                        easily accessible and reducing our administrative burden."</p>
+                    <h3 class="font-semibold">Selvia Octriani</h3>
+                    <p class="text-gray-400">Chief Medical Officer</p>
+                </div>
+                <!-- Add more slides here if needed -->
+            </div>
+        </div>
+        <!-- Slider Buttons -->
+        <button id="prevButton"
+            class="absolute top-0 left-0 mt-8 -ml-10 text-white bg-gray-800 hover:bg-gray-600 p-2 rounded-full">
+            &#10094;
+        </button>
+        <button id="nextButton"
+            class="absolute top-0 right-0 mt-8 -mr-10 text-white bg-gray-800 hover:bg-gray-600 p-2 rounded-full">
+            &#10095;
+        </button>
+    </div>
+
+    <script>
+        const slider = document.getElementById('testimonialSlider');
+        const testimonialContainer = slider.querySelector('.testimonial-container');
+        const slides = slider.querySelectorAll('.testimonial-slide');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            testimonialContainer.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+            showSlide(currentIndex);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+            showSlide(currentIndex);
+        });
+    </script>
+</body>
+
+</html>
